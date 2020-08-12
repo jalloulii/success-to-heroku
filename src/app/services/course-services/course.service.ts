@@ -9,13 +9,13 @@ export class CourseService {
   private _herokuURL = "https://success-back.herokuapp.com"
   private _baseLocalUrl = "http://localhost:3000";
 
-  private _allCourses = this._baseLocalUrl + "/ecourse/all";
-  private _allTrueCourses = this._baseLocalUrl + "/ecourse/all-true";
-  private _allTrueCoursesCategories = this._baseLocalUrl + "/ecourse/all-true-categories";
-  private _allFalseCourses = this._baseLocalUrl + "/ecourse/all-false";
-  private _getOneCourse = this._baseLocalUrl + "/ecourse/one/";
-  private _addOneCourse = this._baseLocalUrl + "/ecourse/add";
-  private _updateState = this._baseLocalUrl + "/ecourse/update-state/";
+  private _allCourses = this._herokuURL + "/ecourse/all";
+  private _allTrueCourses = this._herokuURL + "/ecourse/all-true";
+  private _allTrueCoursesCategories = this._herokuURL + "/ecourse/all-true-categories";
+  private _allFalseCourses = this._herokuURL + "/ecourse/all-false";
+  private _getOneCourse = this._herokuURL + "/ecourse/one/";
+  private _addOneCourse = this._herokuURL + "/ecourse/add";
+  private _updateState = this._herokuURL + "/ecourse/update-state/";
 
   constructor(private http: HttpClient) { }
 

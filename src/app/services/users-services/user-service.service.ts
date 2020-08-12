@@ -9,16 +9,16 @@ export class UserServiceService {
   private _herokuURL = "https://success-back.herokuapp.com";
   private _baseLocalUrl = "http://localhost:3000";
 
-  private _registerUser = this._baseLocalUrl + "/euser/register";
-  private _loginUser = this._baseLocalUrl + "/euser/login";
-  private _allUserUrl = this._baseLocalUrl + "/euser/all";
-  private _addSoldeUser = this._baseLocalUrl + "/euser/add-solde/";
-  private _deleteUser = this._baseLocalUrl + "/euser/delete";
-  private _getOneUser = this._baseLocalUrl + "/euser/one";
-  private _getMyTeam = this._baseLocalUrl + "/euser/all-profs-admins";
-  private _getOneAdmin = this._baseLocalUrl + "/eadmin/one";
-  private _updateForm = this._baseLocalUrl + "/euser/update-form";
-  private _updateFormPROFILE = this._baseLocalUrl + "/update-formPROFILE";
+  private _registerUser = this._herokuURL + "/euser/register";
+  private _loginUser = this._herokuURL + "/euser/login";
+  private _allUserUrl = this._herokuURL + "/euser/all";
+  private _addSoldeUser = this._herokuURL + "/euser/add-solde/";
+  private _deleteUser = this._herokuURL + "/euser/delete";
+  private _getOneUser = this._herokuURL + "/euser/one";
+  private _getMyTeam = this._herokuURL + "/euser/all-profs-admins";
+  private _getOneAdmin = this._herokuURL + "/eadmin/one";
+  private _updateForm = this._herokuURL + "/euser/update-form";
+  private _updateFormPROFILE = this._herokuURL + "/update-formPROFILE";
   constructor(private http: HttpClient) { }
   isLoggedUser() {
     let token = localStorage.getItem("token");

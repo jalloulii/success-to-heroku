@@ -10,13 +10,13 @@ export class ProfService {
   private _herokuURL = "https://success-back.herokuapp.com";
   private _baseLocalUrl = "http://localhost:3000";
 
-  private _addProf = this._baseLocalUrl + "/eprof/add";
-  private _loginProf = this._baseLocalUrl + "/eprof/login";
-  private _allProfUrl = this._baseLocalUrl + "/eprof/all";
-  private _deleteProf = this._baseLocalUrl + "/eprof/delete";
-  private _getOneProf = this._baseLocalUrl + "/eprof/one";
-  private _getProfUniqueCourses = this._baseLocalUrl + "/eprof/prof-courses-added/";
-  private _updateForm = this._baseLocalUrl + "/eprof/update-form";
+  private _addProf = this._herokuURL + "/eprof/add";
+  private _loginProf = this._herokuURL + "/eprof/login";
+  private _allProfUrl = this._herokuURL + "/eprof/all";
+  private _deleteProf = this._herokuURL + "/eprof/delete";
+  private _getOneProf = this._herokuURL + "/eprof/one";
+  private _getProfUniqueCourses = this._herokuURL + "/eprof/prof-courses-added/";
+  private _updateForm = this._herokuURL + "/eprof/update-form";
   constructor(private http: HttpClient) { }
 
   addProf(prof: User) {
